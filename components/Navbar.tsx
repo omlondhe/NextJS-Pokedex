@@ -3,8 +3,9 @@ import React from "react";
 import navbarStyles from "../styles/components/Navbar.module.css";
 import HomeIcon from "@mui/icons-material/HomeRounded";
 import ProfileIcon from "@mui/icons-material/AccountCircleRounded";
+import { NextComponentType } from "next";
 
-const Navbar = () => {
+const Navbar: NextComponentType = () => {
   return (
     <nav className={navbarStyles.navbar}>
       <div className={navbarStyles.home_link}>

@@ -1,7 +1,8 @@
+import { NextComponentType } from "next";
 import React from "react";
 import footerStyles from "../styles/components/Footer.module.css";
 
-const Footer = () => {
+const Footer: NextComponentType = () => {
   return (
     <div className={footerStyles.footer}>
       <p>Copyright &copy; 2022 Om Londhe</p>
