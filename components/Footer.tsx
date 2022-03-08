@@ -9,8 +9,6 @@ const Footer = () => {
       <p>
         Developed with 🖤 by
         <strong> Om Londhe </strong>
-        {/* at
-        <strong> Scaler by InterviewBit</strong> */}
       </p>
     </div>
   );
