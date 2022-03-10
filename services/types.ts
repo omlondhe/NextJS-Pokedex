@@ -5,17 +5,16 @@ export interface PokemonImages {
 
 export interface Pokemon {
   id: string;
+  no: number;
   name: string;
-  height: number;
-  weight: number;
   images: PokemonImages;
-  baseExperience: number;
+  // types: [];
+  // height: number;
+  // weight: number;
+  // baseExperience: number;
 }
 
 export interface PokemonListData {
   url: string;
   name: string;
-  height: number;
-  weight: number;
-  baseExperience: number;
 }
