@@ -8,7 +8,7 @@ import {
   POKEMON_OFFICIAL_IMAGE,
 } from "../../services/constants";
 import { PokemonListData } from "../../services/types";
-import PokemonListItem from "./PokemonListItem";
+import PokemonCard from "./PokemonCard";
 import pokemonListStyles from "../../styles/components/home/PokemonList.module.css";
 
 const PokemonList: NextComponentType = () => {
@@ -24,7 +24,7 @@ const PokemonList: NextComponentType = () => {
   ) : (
     <div className={pokemonListStyles.list}>
       {data?.results.map((pokemon: PokemonListData, index: number) => (
-        <PokemonListItem
+        <PokemonCard
           key={pokemon.url}
           id={pokemon.url}
           name={pokemon.name}

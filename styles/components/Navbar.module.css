@@ -1,9 +1,11 @@
 .navbar {
-  height: 100px;
-  background: red;
+  height: 125px;
+  background: linear-gradient(red, transparent);
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  z-index: 100;
+  top: 0;
+  position: sticky;
 }
 
 .logo {
@@ -13,13 +15,15 @@
 
 .home_link {
   width: 250px;
+  height: 52px;
+  margin-top: 11px;
   display: flex;
-  align-items: center;
 }
 .profile_link {
   width: 250px;
+  height: 52px;
+  margin-top: 11px;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
 }
 
@@ -28,15 +32,16 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  font-size: 21px;
+  font-size: 16px;
   border: 1px solid white;
   border-radius: 50px;
   cursor: pointer;
   color: white;
-  max-width: 62px;
+  max-width: 52px;
   overflow: hidden;
   border-radius: 50%;
   transition: all 271ms ease-in-out;
+  background: red;
 }
 
 .home {
@@ -51,7 +56,7 @@
 }
 
 .icons {
-  font-size: 60px;
+  font-size: 50px;
   color: white;
   padding: 11px;
 }
