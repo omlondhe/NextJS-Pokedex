@@ -6,10 +6,16 @@ export interface PokemonImages {
 export interface Pokemon {
   id: string;
   name: string;
+  height: number;
+  weight: number;
   images: PokemonImages;
+  baseExperience: number;
 }
 
 export interface PokemonListData {
-  name: string;
   url: string;
+  name: string;
+  height: number;
+  weight: number;
+  baseExperience: number;
 }

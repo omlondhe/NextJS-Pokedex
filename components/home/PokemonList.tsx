@@ -25,9 +25,12 @@ const PokemonList: NextComponentType = () => {
     <div className={pokemonListStyles.list}>
       {data?.results.map((pokemon: PokemonListData, index: number) => (
         <PokemonCard
-          key={pokemon.url}
           id={pokemon.url}
+          key={pokemon.url}
           name={pokemon.name}
+          height={pokemon.height}
+          weight={pokemon.weight}
+          baseExperience={pokemon.baseExperience}
           images={{
             main: `${POKEMON_MAIN_IMAGE}${index + 1}.svg`,
             official: `${POKEMON_OFFICIAL_IMAGE}${index + 1}.png`,

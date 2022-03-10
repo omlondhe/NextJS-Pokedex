@@ -11,6 +11,7 @@ const PokemonCard: ({ id, name, images }: Pokemon) => JSX.Element = ({
     <div className={pokemonCardStyles.card}>
       <div className={pokemonCardStyles.cardData}>
         <img src={images.main} alt={name} className={pokemonCardStyles.image} />
+        <div className={pokemonCardStyles.imageShadow}></div>
         <p className={pokemonCardStyles.name}>{name}</p>
       </div>
     </div>
