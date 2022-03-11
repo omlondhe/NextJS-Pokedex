@@ -12,13 +12,13 @@ const Navbar: NextComponentType = () => {
       <div className={navbarStyles.home_link}>
         <div className={navbarStyles.home}>
           <HomeIcon className={navbarStyles.icons} />
-          <p>HOME </p>
+          <p>HOME</p>
         </div>
       </div>
       <div className={navbarStyles.logo}>
         <Image
           src={"/images/logo.png"}
-          height={70}
+          height={"100%"}
           width={175}
           objectFit="contain"
         />

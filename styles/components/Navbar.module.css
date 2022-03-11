@@ -11,6 +11,9 @@
 .logo {
   cursor: none;
   width: 175px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .home_link {
@@ -65,4 +68,31 @@
 .profile:hover {
   max-width: 175px;
   border-radius: 50px;
+}
+
+@media only screen and (max-width: 750px) {
+  .logo {
+    width: 135px;
+  }
+  .icons {
+    font-size: 37px;
+    padding: 7px;
+  }
+  .home_link,
+  .profile_link {
+    width: 57px;
+    height: 43px;
+    margin-top: 17px;
+    justify-content: center;
+  }
+  .home {
+    padding-left: 2px;
+  }
+  .profile {
+    padding-right: 2px;
+  }
+  .home > p,
+  .profile > p {
+    display: none;
+  }
 }
