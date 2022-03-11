@@ -34,8 +34,6 @@
   border-radius: 30% 30% 11px 11px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 7px;
   padding-top: 91px;
   transition: border-color 444ms;
 }
@@ -51,6 +49,8 @@
 }
 
 .imageShadow {
+  left: calc(50%);
+  transform: translateX(-50%);
   height: 20px;
   width: 75%;
   border-radius: 100%;
@@ -77,6 +77,49 @@
   padding-left: 11px;
   padding-right: 11px;
   border-radius: 21px;
+  align-self: center;
+}
+
+.heightAndWeight {
+  overflow: hidden;
+}
+
+.height,
+.weight {
+  width: max-content;
+  margin-left: 0;
+  padding: 2px;
+  padding-right: 21px;
+  padding-left: 7px;
+  border-radius: 0 21px 21px 0;
+  border-right: 1px solid lightgrey;
+  border-top: 1.5px solid lightgrey;
+  border-bottom: 1.5px solid lightgrey;
+  border-left: 0px;
+  font-size: 14px;
+  transform: translateX(-200px);
+}
+
+.height {
+  margin-bottom: 4px;
+  margin-top: 11px;
+  background-color: rgb(157, 200, 245);
+  transition: transform 271ms;
+}
+.weight {
+  background-color: rgb(124, 185, 114);
+  transition: transform 271ms 221ms;
+}
+
+.xp {
+  position: absolute;
+  background: yellow;
+  border-radius: 50% 0 11px 0;
+  padding: 7px;
+  bottom: 0;
+  right: 0;
+  border-top: 1.5px solid lightgrey;
+  border-left: 1.5px solid lightgrey;
 }
 
 .card:hover {
@@ -105,8 +148,21 @@
   transform: translateY(0);
   transition: all 271ms 571ms cubic-bezier(0, -0.01, 0, 2.05);
 }
+
 .card:hover .imageShadow {
   opacity: 1;
   top: 60px;
   transition: all 444ms 251ms;
+}
+
+.card:hover .height,
+.card:hover .weight {
+  transform: translateX(0);
+}
+
+.card:hover .height {
+  transition: transform 271ms 721ms;
+}
+.card:hover .weight {
+  transition: transform 271ms 851ms;
 }
